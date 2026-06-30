@@ -258,6 +258,30 @@ export default function ConceptC4_1() {
         </div>
       </section>
 
+      {/* Wishlist Section */}
+      <section className="px-6 pb-8">
+        <div className="bg-white rounded-3xl p-8 shadow-sm text-center">
+          <div className="text-3xl mb-3">🎁</div>
+          <h2 className="font-cute text-lg text-gray-700 mb-2">시온이에게 선물하기</h2>
+          <p className="font-nanum text-xs text-gray-400 leading-5 mb-5">
+            시온이의 첫 생일을 축하해주실 분들을 위해<br />
+            위시리스트를 준비했어요!
+          </p>
+          <a
+            href="https://www.amazon.com/hz/wishlist/ls/PLACEHOLDER"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#FF9900] hover:bg-[#e88b00] rounded-full text-white font-nanum text-sm font-bold transition-colors shadow-md"
+          >
+            <span>📦</span>
+            Amazon Wishlist 보기
+          </a>
+          <p className="font-nanum text-xs text-gray-400 mt-4">
+            선물은 마음일 뿐, 와주시는 것만으로 감사합니다 💙
+          </p>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="py-8 text-center">
         <p className="font-cute text-sm text-gray-500">시온이의 돐잔치에 와주셔서 감사합니다 💙</p>
