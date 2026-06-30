@@ -55,6 +55,13 @@ export default function Home() {
           </a>
         </Link>
 
+        <Link href="/concept-c-4">
+          <a className="block p-6 bg-baby-sky rounded-xl border border-baby-blue hover:shadow-lg transition-shadow text-center">
+            <div className="text-lg font-gowun text-gray-700 mb-1">Concept C-4</div>
+            <div className="text-sm font-nanum text-gray-500">Decorated — crown, balloons, stars, hearts</div>
+          </a>
+        </Link>
+
         <Link href="/concept-d">
           <a className="block p-6 bg-[#EAEFFF] rounded-xl border border-[#6B85B7]/30 hover:shadow-lg transition-shadow text-center">
             <div className="text-lg font-gowun text-gray-700 mb-1">Concept D</div>
