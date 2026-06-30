@@ -17,7 +17,7 @@ export default function ConceptC2() {
           <div className="text-center pt-8 pb-4 px-6">
             <p className="font-cute text-xs text-baby-blue tracking-widest mb-3">HAPPY FIRST BIRTHDAY</p>
             <h1 className="font-cute text-5xl text-gray-700 mb-1">Sean</h1>
-            <p className="font-nanum text-xs text-gray-400 mt-2">류시온 · 2025.8.13</p>
+            <p className="font-nanum text-xs text-gray-500 mt-2">류시온 · 2025.8.13</p>
           </div>
           {/* Photo - natural rectangle with rounded bottom */}
           <div className="px-5 pb-6 pt-2">
@@ -103,8 +103,8 @@ export default function ConceptC2() {
 
       {/* Footer */}
       <footer className="py-8 text-center">
-        <p className="font-cute text-sm text-white/80">시온이의 돐잔치에 와주셔서 감사합니다 💙</p>
-        <p className="font-nanum text-xs text-white/50 mt-1">Made with love</p>
+        <p className="font-cute text-sm text-gray-500">시온이의 돐잔치에 와주셔서 감사합니다 💙</p>
+        <p className="font-nanum text-xs text-gray-400 mt-1">Made with love</p>
       </footer>
     </div>
   );

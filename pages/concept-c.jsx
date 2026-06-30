@@ -26,7 +26,7 @@ export default function ConceptC() {
           <div className="text-center py-6 bg-white">
             <p className="font-cute text-xs text-baby-blue tracking-widest mb-1">HAPPY FIRST BIRTHDAY</p>
             <h1 className="font-cute text-4xl text-gray-700">Sean</h1>
-            <p className="font-nanum text-xs text-gray-400 mt-2">류시온 · 2025.8.13</p>
+            <p className="font-nanum text-xs text-gray-500 mt-2">류시온 · 2025.8.13</p>
           </div>
         </div>
       </section>
@@ -104,8 +104,8 @@ export default function ConceptC() {
 
       {/* Footer */}
       <footer className="py-8 text-center">
-        <p className="font-cute text-sm text-white/80">시온이의 돐잔치에 와주셔서 감사합니다 💙</p>
-        <p className="font-nanum text-xs text-white/50 mt-1">Made with love</p>
+        <p className="font-cute text-sm text-gray-500">시온이의 돐잔치에 와주셔서 감사합니다 💙</p>
+        <p className="font-nanum text-xs text-gray-400 mt-1">Made with love</p>
       </footer>
     </div>
   );
