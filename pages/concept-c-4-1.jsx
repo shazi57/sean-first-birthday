@@ -110,7 +110,7 @@ export default function ConceptC4_1() {
               </p>
             </div>
 
-            {/* Amazon Wishlist Button */}
+            {/* Wishlist Button */}
             <a
               href="https://www.amazon.com/hz/wishlist/ls/PLACEHOLDER"
               target="_blank"
@@ -118,7 +118,7 @@ export default function ConceptC4_1() {
               className="flex items-center justify-center gap-3 w-full py-4 bg-[#FF9900] hover:bg-[#e88b00] rounded-2xl text-white font-nanum text-sm font-bold transition-colors shadow-md"
             >
               <span className="text-lg">📦</span>
-              Amazon Wishlist 보기
+              시온이의 첫 선물 고르기
             </a>
 
             {/* Secondary note */}
@@ -285,7 +285,7 @@ export default function ConceptC4_1() {
             className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#FF9900] hover:bg-[#e88b00] rounded-full text-white font-nanum text-sm font-bold transition-colors shadow-md"
           >
             <span>📦</span>
-            Amazon Wishlist 보기
+            시온이의 첫 선물 고르기
           </a>
           <p className="font-nanum text-xs text-gray-400 mt-4">
             선물은 마음일 뿐, 와주시는 것만으로 감사합니다 💙
