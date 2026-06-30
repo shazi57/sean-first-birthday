@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Head from 'next/head';
 
 function StarIcon({ className }) {
@@ -54,6 +54,17 @@ function ConfettiIcon({ className }) {
 
 export default function ConceptC4_1() {
   const [showWishlist, setShowWishlist] = useState(false);
+  const [showButton, setShowButton] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolledToBottom =
+        window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 200;
+      setShowButton(!scrolledToBottom);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
     <div className="flex flex-col max-w-[430px] mx-auto min-h-screen bg-baby-sky subpixel-antialiased relative">
@@ -64,10 +75,10 @@ export default function ConceptC4_1() {
         <meta property="og:description" content="우리 시온이가 벌써 첫 생일을 맞이했어요!" />
       </Head>
 
-      {/* Floating Gift Button - Fixed bottom right */}
+      {/* Floating Gift Button - Fixed bottom right, hides at bottom */}
       <button
         onClick={() => setShowWishlist(true)}
-        className="fixed bottom-6 right-6 z-50 w-14 h-14 bg-white rounded-full shadow-lg border border-baby-blue/30 flex items-center justify-center hover:scale-110 transition-transform active:scale-95"
+        className={`fixed bottom-6 right-6 z-50 w-14 h-14 bg-white rounded-full shadow-lg border border-baby-blue/30 flex items-center justify-center transition-all duration-300 active:scale-95 ${showButton ? 'opacity-100 scale-100' : 'opacity-0 scale-75 pointer-events-none'}`}
         aria-label="Wishlist"
       >
         <span className="text-2xl">🎁</span>
