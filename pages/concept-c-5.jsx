@@ -22,7 +22,7 @@ function StarIcon({ className }) {
 function HeartIcon({ className }) {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
-      <path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-5.09 5.09a2.9 2.9 0 0 1 -3.32 .57l-.162 -.09l-.137 -.1l-5.106 -5.105a6 6 0 0 1 .413 -8.397z"/>
+      <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
     </svg>
   );
 }
@@ -166,25 +166,25 @@ export default function ConceptC5() {
           <div className="absolute top-6 left-20">
             <StarIcon className="w-7 h-7 text-yellow-400 opacity-70" />
           </div>
-          <div className="absolute top-20 right-4">
+          <div className="absolute top-[200px] right-4">
             <BalloonIcon className="w-7 h-7 text-blue-400 opacity-65" />
           </div>
           <div className="absolute top-20 left-10">
-            <HeartIcon className="w-5 h-5 text-pink-400 opacity-60" />
+            <HeartIcon className="w-6 h-6 text-pink-400 opacity-70" />
           </div>
-          <div className="absolute bottom-4 left-3">
+          <div className="absolute bottom-10 left-10">
             <BalloonIcon className="w-6 h-6 text-pink-400 opacity-65" />
           </div>
           <div className="absolute bottom-3 right-4">
             <StarIcon className="w-6 h-6 text-yellow-400 opacity-70" />
           </div>
-          <div className="absolute bottom-16 right-5">
+          <div className="absolute bottom-16 right-[250px]">
             <HeartIcon className="w-5 h-5 text-red-300 opacity-60" />
           </div>
           <div className="absolute top-16 right-14">
             <StarIcon className="w-4 h-4 text-yellow-300 opacity-60" />
           </div>
-          <div className="absolute bottom-14 left-5">
+          <div className="absolute bottom-[200px] left-5">
             <ConfettiIcon className="w-6 h-6 text-blue-400 opacity-60" />
           </div>
         </div>
