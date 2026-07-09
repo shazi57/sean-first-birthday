@@ -155,13 +155,38 @@ export default function ConceptC5() {
           </div>
         </div>
 
-        {/* Photo - full width */}
-        <div className="w-full">
+        {/* Photo - full width with decorative elements at edges */}
+        <div className="w-full relative overflow-hidden">
           <img
             src="/images/sean-main.png"
             alt="시온"
-            className="w-full h-[350px] object-cover"
+            className="w-full h-[500px] object-[center_100%] object-cover"
           />
+          {/* Decorative icons - contained in photo, hugging corners/edges */}
+          <div className="absolute top-3 left-3">
+            <StarIcon className="w-5 h-5 text-yellow-200 opacity-50" />
+          </div>
+          <div className="absolute top-4 right-4">
+            <BalloonIcon className="w-5 h-5 text-blue-200 opacity-45" />
+          </div>
+          <div className="absolute top-14 left-5">
+            <HeartIcon className="w-3 h-3 text-pink-200 opacity-40" />
+          </div>
+          <div className="absolute bottom-4 left-3">
+            <BalloonIcon className="w-4 h-4 text-pink-200 opacity-45" />
+          </div>
+          <div className="absolute bottom-3 right-4">
+            <StarIcon className="w-4 h-4 text-yellow-200 opacity-50" />
+          </div>
+          <div className="absolute bottom-14 right-5">
+            <HeartIcon className="w-3 h-3 text-red-200 opacity-40" />
+          </div>
+          <div className="absolute top-14 right-12">
+            <StarIcon className="w-3 h-3 text-yellow-100 opacity-45" />
+          </div>
+          <div className="absolute bottom-12 left-5">
+            <ConfettiIcon className="w-4 h-4 text-blue-200 opacity-40" />
+          </div>
         </div>
 
         {/* Thin decorative line separator */}
