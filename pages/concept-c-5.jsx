@@ -268,15 +268,17 @@ export default function ConceptC5() {
           <div className="flex gap-3 pb-4" style={{ width: 'max-content' }}>
             {[
               { label: '탄생', src: '/images/carousel/0month.jpg' },
-              { label: '100일', src: '/images/carousel/100days.png' },
-              { label: '6개월', src: '/images/carousel/6month.png' },
+              { label: '100일', src: '/images/carousel/100days.png', className: 'object-[center_20%] scale-150' },
+              { label: '6개월', src: '/images/carousel/6month.png', className: 'object-[center_20%] scale-150' },
               { label: '9개월', src: '/images/carousel/9month.png' },
               { label: '11개월', src: null },
               { label: '돌', src: null },
             ].map((item, i) => (
               <div key={i} className="w-40 shrink-0">
                 {item.src ? (
-                  <img src={item.src} alt={item.label} className="w-40 h-48 rounded-2xl object-cover shadow-sm" />
+                  <div className="w-40 h-48 rounded-2xl overflow-hidden shadow-sm">
+                    <img src={item.src} alt={item.label} className={`w-full h-full object-cover ${item.className || ''}`} />
+                  </div>
                 ) : (
                   <div className="w-40 h-48 rounded-2xl bg-white border-2 border-dashed border-baby-blue/50 flex items-center justify-center shadow-sm">
                     <span className="font-nanum text-xs text-gray-400">Photo</span>
