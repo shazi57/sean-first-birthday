@@ -132,36 +132,10 @@ export default function ConceptC5() {
         </div>
       )}
 
-      {/* Hero Section - Full width, 80vh, no card */}
-      <section className="bg-white w-full h-[80vh] flex flex-col justify-between relative overflow-hidden">
-        {/* Floating decorative elements */}
-        <div className="absolute top-20 left-4 z-10">
-          <BalloonIcon className="w-6 h-6 text-blue-200 opacity-40" />
-        </div>
-        <div className="absolute top-28 right-6 z-10">
-          <StarIcon className="w-5 h-5 text-yellow-200 opacity-40" />
-        </div>
-        <div className="absolute top-[42%] left-5 z-10">
-          <HeartIcon className="w-4 h-4 text-pink-200 opacity-40" />
-        </div>
-        <div className="absolute top-[48%] right-5 z-10">
-          <BalloonIcon className="w-5 h-5 text-pink-200 opacity-35" />
-        </div>
-        <div className="absolute top-[58%] left-10 z-10">
-          <StarIcon className="w-3 h-3 text-yellow-200 opacity-40" />
-        </div>
-        <div className="absolute top-[62%] right-12 z-10">
-          <HeartIcon className="w-3 h-3 text-red-200 opacity-35" />
-        </div>
-        <div className="absolute bottom-[22%] left-5 z-10">
-          <ConfettiIcon className="w-5 h-5 text-blue-200 opacity-35" />
-        </div>
-        <div className="absolute bottom-[26%] right-8 z-10">
-          <StarIcon className="w-4 h-4 text-yellow-200 opacity-35" />
-        </div>
-
+      {/* Hero Section - Full width, no card */}
+      <section className="bg-white w-full min-h-screen flex flex-col justify-between">
         {/* Date with decorative branches - darker */}
-        <div className="flex items-center justify-center gap-3 pt-12 pb-2 relative z-20">
+        <div className="flex items-center justify-center gap-3 pt-12 pb-2">
           <LeafBranchLeft className="w-14 h-6 text-[#5a7aad]" />
           <div className="text-center">
             <p className="font-baskerville text-3xl text-[#4a6a9d] tracking-wider">08.13</p>
@@ -170,7 +144,7 @@ export default function ConceptC5() {
         </div>
 
         {/* Happy Birthday text - darker */}
-        <div className="text-center pb-3 relative z-20">
+        <div className="text-center pb-6">
           <p className="font-cute text-xs text-[#4a6a9d] tracking-[0.25em]">HAPPY FIRST BIRTHDAY</p>
           <div className="flex justify-center gap-1.5 mt-3">
             <span className="w-1 h-1 rounded-full bg-[#5a7aad]/50"></span>
@@ -181,26 +155,26 @@ export default function ConceptC5() {
           </div>
         </div>
 
-        {/* Photo - full width, crop top portion */}
-        <div className="w-full flex-1 min-h-0 relative z-0">
+        {/* Photo - full width */}
+        <div className="w-full flex-1 min-h-0">
           <img
             src="/images/sean-main.png"
             alt="시온"
-            className="w-full h-full object-cover object-bottom"
+            className="w-full h-full object-cover"
           />
         </div>
 
         {/* Thin decorative line separator */}
-        <div className="flex justify-center py-3 relative z-20">
-          <div className="w-16 h-[0.5px] bg-[#5a7aad]/30"></div>
+        <div className="flex justify-center py-4">
+          <div className="w-16 h-[0.5px] bg-baby-blue/30"></div>
         </div>
 
         {/* Name area - with sparkles and tagline */}
-        <div className="text-center pb-8 relative z-20">
+        <div className="text-center pb-10">
           <div className="flex items-center justify-center gap-2 mb-1">
-            <SparkleIcon className="w-4 h-4 text-yellow-300/80" />
+            <SparkleIcon className="w-4 h-4 text-yellow-300/70" />
             <h1 className="font-cute text-5xl text-gray-700">Sean</h1>
-            <SparkleIcon className="w-4 h-4 text-yellow-300/80" />
+            <SparkleIcon className="w-4 h-4 text-yellow-300/70" />
           </div>
           <p className="font-nanum text-sm text-gray-500 mt-2">류시온</p>
           <p className="font-nanum text-[0.7rem] text-gray-400 mt-2 tracking-wider">우리의 첫 번째 기적 ✦</p>
