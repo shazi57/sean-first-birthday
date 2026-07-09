@@ -268,8 +268,8 @@ export default function ConceptC5() {
           <div className="flex gap-3 pb-4" style={{ width: 'max-content' }}>
             {[
               { label: '탄생', src: '/images/carousel/0month.jpg' },
-              { label: '100일', src: '/images/carousel/100days.png', className: 'object-[center_20%] scale-150' },
-              { label: '6개월', src: '/images/carousel/6month.png', className: 'object-[center_20%] scale-150' },
+              { label: '100일', src: '/images/carousel/100days.png', className: 'object-[center_170%] scale-[3]' },
+              { label: '6개월', src: '/images/carousel/6month.png', className: 'object-[center_5%] scale-[1.4]' },
               { label: '9개월', src: '/images/carousel/9month.png' },
               { label: '11개월', src: null },
               { label: '돌', src: null },
