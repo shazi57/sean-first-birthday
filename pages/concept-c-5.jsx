@@ -169,20 +169,20 @@ export default function ConceptC5() {
           <div className="absolute top-[200px] right-4">
             <BalloonIcon className="w-7 h-7 text-blue-400 opacity-65" />
           </div>
-          <div className="absolute top-20 left-10">
-            <HeartIcon className="w-6 h-6 text-pink-400 opacity-70" />
+          <div className="absolute top-[120px] left-10">
+            <HeartIcon className="w-5 h-5 text-pink-400 opacity-70" />
           </div>
           <div className="absolute bottom-10 left-10">
             <BalloonIcon className="w-6 h-6 text-pink-400 opacity-65" />
           </div>
-          <div className="absolute bottom-3 right-4">
+          <div className="absolute bottom-8 right-7">
             <StarIcon className="w-6 h-6 text-yellow-400 opacity-70" />
           </div>
           <div className="absolute bottom-16 right-[250px]">
             <HeartIcon className="w-5 h-5 text-red-300 opacity-60" />
           </div>
-          <div className="absolute top-16 right-14">
-            <StarIcon className="w-4 h-4 text-yellow-300 opacity-60" />
+          <div className="absolute top-20 right-12">
+            <StarIcon className="w-4 h-4 text-yellow-400 opacity-60" />
           </div>
           <div className="absolute bottom-[200px] left-5">
             <ConfettiIcon className="w-6 h-6 text-blue-400 opacity-60" />
