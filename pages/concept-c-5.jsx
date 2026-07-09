@@ -163,29 +163,29 @@ export default function ConceptC5() {
             className="w-full h-[500px] object-[center_100%] object-cover"
           />
           {/* Decorative icons - contained in photo, hugging corners/edges */}
-          <div className="absolute top-3 left-3">
-            <StarIcon className="w-5 h-5 text-yellow-200 opacity-50" />
+          <div className="absolute top-6 left-20">
+            <StarIcon className="w-7 h-7 text-yellow-400 opacity-70" />
           </div>
-          <div className="absolute top-4 right-4">
-            <BalloonIcon className="w-5 h-5 text-blue-200 opacity-45" />
+          <div className="absolute top-20 right-4">
+            <BalloonIcon className="w-7 h-7 text-blue-400 opacity-65" />
           </div>
-          <div className="absolute top-14 left-5">
-            <HeartIcon className="w-3 h-3 text-pink-200 opacity-40" />
+          <div className="absolute top-20 left-10">
+            <HeartIcon className="w-5 h-5 text-pink-400 opacity-60" />
           </div>
           <div className="absolute bottom-4 left-3">
-            <BalloonIcon className="w-4 h-4 text-pink-200 opacity-45" />
+            <BalloonIcon className="w-6 h-6 text-pink-400 opacity-65" />
           </div>
           <div className="absolute bottom-3 right-4">
-            <StarIcon className="w-4 h-4 text-yellow-200 opacity-50" />
+            <StarIcon className="w-6 h-6 text-yellow-400 opacity-70" />
           </div>
-          <div className="absolute bottom-14 right-5">
-            <HeartIcon className="w-3 h-3 text-red-200 opacity-40" />
+          <div className="absolute bottom-16 right-5">
+            <HeartIcon className="w-5 h-5 text-red-300 opacity-60" />
           </div>
-          <div className="absolute top-14 right-12">
-            <StarIcon className="w-3 h-3 text-yellow-100 opacity-45" />
+          <div className="absolute top-16 right-14">
+            <StarIcon className="w-4 h-4 text-yellow-300 opacity-60" />
           </div>
-          <div className="absolute bottom-12 left-5">
-            <ConfettiIcon className="w-4 h-4 text-blue-200 opacity-40" />
+          <div className="absolute bottom-14 left-5">
+            <ConfettiIcon className="w-6 h-6 text-blue-400 opacity-60" />
           </div>
         </div>
 
