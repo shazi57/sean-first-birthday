@@ -191,15 +191,15 @@ export default function ConceptC5() {
         </div>
 
         {/* Thin decorative line separator */}
-        <div className="flex justify-center py-4">
+        {/* <div className="flex justify-center py-4">
           <div className="w-16 h-[0.5px] bg-baby-blue/30"></div>
-        </div>
+        </div> */}
 
         {/* Name area - with sparkles and tagline */}
-        <div className="text-center pb-10">
+        <div className="text-center pb-10 py-7">
           <div className="flex items-center justify-center gap-2 mb-1">
             <SparkleIcon className="w-4 h-4 text-yellow-300/70" />
-            <h1 className="font-cute text-5xl text-gray-700">Sean</h1>
+            <h1 className="font-cute text-5xl text-gray-700">Sean Ryu</h1>
             <SparkleIcon className="w-4 h-4 text-yellow-300/70" />
           </div>
           <p className="font-nanum text-sm text-gray-500 mt-2">류시온</p>
