@@ -96,6 +96,7 @@ export default function ConceptC5() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta property="og:title" content="시온이의 돌잔치에 놀러오세요! 🎉" />
         <meta property="og:description" content="우리 시온이가 벌써 첫 생일을 맞이했어요!" />
+        <meta property="og:image" content="https://sean-first-birthday.vercel.app/images/og-image.png" />
       </Head>
 
       {/* Floating Gift Button */}
