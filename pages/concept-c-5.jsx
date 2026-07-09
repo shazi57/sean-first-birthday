@@ -96,10 +96,10 @@ export default function ConceptC5() {
         </div>
       )}
 
-      {/* Hero Section - Full width, no card */}
-      <section className="bg-white w-full">
+      {/* Hero Section - Full width, full height, no card */}
+      <section className="bg-white w-full min-h-screen flex flex-col justify-between">
         {/* Date with decorative branches */}
-        <div className="flex items-center justify-center gap-3 pt-12 pb-2">
+        <div className="flex items-center justify-center gap-3 pt-16 pb-2">
           <LeafBranchLeft className="w-14 h-6 text-baby-blue/40" />
           <div className="text-center">
             <p className="font-baskerville text-3xl text-baby-blue/70 tracking-wider">08.13</p>
@@ -108,7 +108,7 @@ export default function ConceptC5() {
         </div>
 
         {/* Happy Birthday text with decorative dots */}
-        <div className="text-center pb-6">
+        <div className="text-center pb-4">
           <p className="font-cute text-xs text-baby-blue/60 tracking-[0.25em]">HAPPY FIRST BIRTHDAY</p>
           <div className="flex justify-center gap-1.5 mt-3">
             <span className="w-1 h-1 rounded-full bg-baby-blue/30"></span>
@@ -120,11 +120,11 @@ export default function ConceptC5() {
         </div>
 
         {/* Photo - full width, no rounding */}
-        <div className="w-full">
+        <div className="w-full flex-1 min-h-0">
           <img
             src="/images/sean-main.png"
             alt="시온"
-            className="w-full h-[350px] object-cover"
+            className="w-full h-full object-cover"
           />
         </div>
 
@@ -134,7 +134,7 @@ export default function ConceptC5() {
         </div>
 
         {/* Name area - with sparkles and tagline */}
-        <div className="text-center pb-10">
+        <div className="text-center pb-12">
           <div className="flex items-center justify-center gap-2 mb-1">
             <SparkleIcon className="w-4 h-4 text-yellow-300/70" />
             <h1 className="font-cute text-5xl text-gray-700">Sean</h1>
