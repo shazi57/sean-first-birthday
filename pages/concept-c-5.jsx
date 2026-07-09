@@ -133,7 +133,7 @@ export default function ConceptC5() {
       )}
 
       {/* Hero Section - Full width, no card */}
-      <section className="bg-white w-full min-h-screen flex flex-col justify-between">
+      <section className="bg-white w-full">
         {/* Date with decorative branches - darker */}
         <div className="flex items-center justify-center gap-3 pt-12 pb-2">
           <LeafBranchLeft className="w-14 h-6 text-[#5a7aad]" />
@@ -156,11 +156,11 @@ export default function ConceptC5() {
         </div>
 
         {/* Photo - full width */}
-        <div className="w-full flex-1 min-h-0">
+        <div className="w-full">
           <img
             src="/images/sean-main.png"
             alt="시온"
-            className="w-full h-full object-cover"
+            className="w-full h-[350px] object-cover"
           />
         </div>
 
