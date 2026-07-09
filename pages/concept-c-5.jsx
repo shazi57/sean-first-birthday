@@ -286,7 +286,7 @@ export default function ConceptC5() {
           <p className="font-nanum text-xs text-gray-400 leading-5 mb-5">
             시온이의 첫 생일을 축하해주실 분들을 위해<br />위시리스트를 준비했어요!
           </p>
-          <a href="https://www.amazon.com/hz/wishlist/ls/PLACEHOLDER" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.amazon.com/registries/gl/guest-view/2LWK5G4QNO9AE?ref_=cm_sw_r_cp_ud_ggr-subnav-share_NFAAVG3T5S6VJ551EQ6J" target="_blank" rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-[#FF9900] hover:bg-[#e88b00] rounded-full text-white font-nanum text-sm font-bold transition-colors shadow-md">
             <span>📦</span>시온이의 첫 선물 고르기
           </a>
