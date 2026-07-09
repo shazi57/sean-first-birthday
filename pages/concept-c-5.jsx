@@ -123,7 +123,7 @@ export default function ConceptC5() {
                 시온이의 첫 생일을 축하해주실 분들을 위해<br />위시리스트를 준비했어요!
               </p>
             </div>
-            <a href="https://www.amazon.com/hz/wishlist/ls/PLACEHOLDER" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.amazon.com/registries/gl/guest-view/2LWK5G4QNO9AE?ref_=cm_sw_r_cp_ud_ggr-subnav-share_NFAAVG3T5S6VJ551EQ6J" target="_blank" rel="noopener noreferrer"
               className="flex items-center justify-center gap-3 w-full py-4 bg-[#FF9900] hover:bg-[#e88b00] rounded-2xl text-white font-nanum text-sm font-bold transition-colors shadow-md">
               <span className="text-lg">📦</span>시온이의 첫 선물 고르기
             </a>
@@ -266,12 +266,23 @@ export default function ConceptC5() {
         <h2 className="font-cute text-lg text-gray-700 text-center mb-4">시온이의 성장앨범 📸</h2>
         <div className="px-6 overflow-x-auto">
           <div className="flex gap-3 pb-4" style={{ width: 'max-content' }}>
-            {['탄생', '100일', '6개월', '9개월', '11개월', '돌'].map((label, i) => (
+            {[
+              { label: '탄생', src: '/images/carousel/0month.jpg' },
+              { label: '100일', src: '/images/carousel/100days.png' },
+              { label: '6개월', src: '/images/carousel/6month.png' },
+              { label: '9개월', src: '/images/carousel/9month.png' },
+              { label: '11개월', src: null },
+              { label: '돌', src: null },
+            ].map((item, i) => (
               <div key={i} className="w-40 shrink-0">
-                <div className="w-40 h-48 rounded-2xl bg-white border-2 border-dashed border-baby-blue/50 flex items-center justify-center shadow-sm">
-                  <span className="font-nanum text-xs text-gray-400">Photo</span>
-                </div>
-                <p className="font-nanum text-xs text-gray-500 text-center mt-2">{label}</p>
+                {item.src ? (
+                  <img src={item.src} alt={item.label} className="w-40 h-48 rounded-2xl object-cover shadow-sm" />
+                ) : (
+                  <div className="w-40 h-48 rounded-2xl bg-white border-2 border-dashed border-baby-blue/50 flex items-center justify-center shadow-sm">
+                    <span className="font-nanum text-xs text-gray-400">Photo</span>
+                  </div>
+                )}
+                <p className="font-nanum text-xs text-gray-500 text-center mt-2">{item.label}</p>
               </div>
             ))}
           </div>
