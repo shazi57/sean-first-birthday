@@ -4,9 +4,9 @@ export default function ConceptC1() {
   return (
     <div className="flex flex-col max-w-[430px] mx-auto min-h-screen bg-baby-sky subpixel-antialiased">
       <Head>
-        <title>시온이의 돐잔치 🎂</title>
+        <title>시온이의 돌잔치 🎂</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="시온이의 돐잔치에 놀러오세요! 🎉" />
+        <meta property="og:title" content="시온이의 돌잔치에 놀러오세요! 🎉" />
         <meta property="og:description" content="우리 시온이가 벌써 첫 생일을 맞이했어요!" />
       </Head>
 
@@ -38,7 +38,7 @@ export default function ConceptC1() {
             <p>우리 시온이가 벌써 첫 생일을 맞이했어요.</p>
             <p className="mt-3">매일매일 쑥쑥 자라준 시온이와 함께</p>
             <p>기쁜 날을 보내고 싶어</p>
-            <p>작은 돐잔치를 준비했습니다. 🎉</p>
+            <p>작은 돌잔치를 준비했습니다. 🎉</p>
             <p className="mt-3">오셔서 시온이의 첫 생일을</p>
             <p>함께 축하해 주세요! 🥰</p>
           </div>
@@ -53,7 +53,7 @@ export default function ConceptC1() {
       <section className="px-6 pb-8">
         <div className="bg-white rounded-3xl overflow-hidden shadow-sm">
           <div className="bg-baby-mint/50 px-6 py-4 text-center">
-            <h2 className="font-cute text-lg text-gray-700">돐잔치 안내 🎊</h2>
+            <h2 className="font-cute text-lg text-gray-700">돌잔치 안내 🎊</h2>
           </div>
           <div className="p-6 space-y-4">
             <div className="flex items-start gap-4">
@@ -87,7 +87,7 @@ export default function ConceptC1() {
         <h2 className="font-cute text-lg text-gray-700 text-center mb-4">시온이의 성장앨범 📸</h2>
         <div className="px-6 overflow-x-auto">
           <div className="flex gap-3 pb-4" style={{ width: 'max-content' }}>
-            {['탄생', '100일', '6개월', '9개월', '11개월', '돐'].map((label, i) => (
+            {['탄생', '100일', '6개월', '9개월', '11개월', '돌'].map((label, i) => (
               <div key={i} className="w-40 shrink-0">
                 <div className="w-40 h-48 rounded-2xl bg-white border-2 border-dashed border-baby-blue/50 flex items-center justify-center shadow-sm">
                   <span className="font-nanum text-xs text-gray-400">Photo</span>
@@ -101,7 +101,7 @@ export default function ConceptC1() {
 
       {/* Footer */}
       <footer className="py-8 text-center">
-        <p className="font-cute text-sm text-gray-500">시온이의 돐잔치에 와주셔서 감사합니다 💙</p>
+        <p className="font-cute text-sm text-gray-500">시온이의 돌잔치에 와주셔서 감사합니다 💙</p>
         <p className="font-nanum text-xs text-gray-400 mt-1">Made with love</p>
       </footer>
     </div>

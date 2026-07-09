@@ -4,9 +4,9 @@ export default function ConceptD() {
   return (
     <div className="flex flex-col max-w-[430px] mx-auto min-h-screen bg-white subpixel-antialiased">
       <Head>
-        <title>시온이의 돐잔치에 초대합니다</title>
+        <title>시온이의 돌잔치에 초대합니다</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="시온이의 돐잔치에 초대합니다" />
+        <meta property="og:title" content="시온이의 돌잔치에 초대합니다" />
         <meta property="og:description" content="우리 아들 시온이의 첫 번째 생일을 축하해주세요" />
         <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
       </Head>
@@ -31,7 +31,7 @@ export default function ConceptD() {
         {/* Title */}
         <div className="text-center py-8">
           <h1 className="text-[#6B85B7] text-2xl tracking-[0.15em] font-light" style={{ fontFamily: "'S-CoreDream', 'Noto Sans KR', sans-serif" }}>
-            시온이의 돐잔치에 초대합니다
+            시온이의 돌잔치에 초대합니다
           </h1>
         </div>
 
@@ -148,7 +148,7 @@ export default function ConceptD() {
         <div className="flex justify-center mb-4">
           <div className="w-8 h-[1px] bg-[#6B85B7]/30"></div>
         </div>
-        <p className="text-[#6B85B7] text-xs tracking-wider font-nanum">시온이의 돐잔치에 와주셔서 감사합니다</p>
+        <p className="text-[#6B85B7] text-xs tracking-wider font-nanum">시온이의 돌잔치에 와주셔서 감사합니다</p>
       </footer>
     </div>
   );

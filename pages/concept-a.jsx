@@ -4,9 +4,9 @@ export default function ConceptA() {
   return (
     <div className="flex flex-col max-w-[430px] mx-auto min-h-screen bg-beige-50 subpixel-antialiased">
       <Head>
-        <title>Sean의 돐잔치에 초대합니다</title>
+        <title>Sean의 돌잔치에 초대합니다</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Sean의 돐잔치에 초대합니다" />
+        <meta property="og:title" content="Sean의 돌잔치에 초대합니다" />
         <meta property="og:description" content="우리 아들 시온이의 첫 번째 생일을 축하해주세요" />
       </Head>
 
@@ -54,7 +54,7 @@ export default function ConceptA() {
 
       {/* Event Details - 행사 안내 */}
       <section className="px-8 py-12 text-center">
-        <h2 className="font-gowun text-xl text-gray-700 font-bold tracking-widest mb-8">돐잔치 안내</h2>
+        <h2 className="font-gowun text-xl text-gray-700 font-bold tracking-widest mb-8">돌잔치 안내</h2>
         <div className="bg-white rounded-xl p-6 shadow-sm border border-beige-100">
           <div className="font-nanum text-sm text-gray-500 space-y-3">
             <div className="flex items-center justify-center gap-2">
@@ -95,7 +95,7 @@ export default function ConceptA() {
 
       {/* Footer */}
       <footer className="py-8 text-center">
-        <p className="font-gowun text-sm text-gray-400">시온이의 돐잔치에 와주셔서 감사합니다 ♡</p>
+        <p className="font-gowun text-sm text-gray-400">시온이의 돌잔치에 와주셔서 감사합니다 ♡</p>
       </footer>
     </div>
   );

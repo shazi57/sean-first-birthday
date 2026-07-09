@@ -5,11 +5,11 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col items-center justify-center p-6">
       <Head>
-        <title>Sean의 돐잔치 초대장 - Design Concepts</title>
+        <title>Sean의 돌잔치 초대장 - Design Concepts</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <h1 className="font-gowun text-2xl text-gray-800 mb-2">Sean의 돐잔치 초대장</h1>
+      <h1 className="font-gowun text-2xl text-gray-800 mb-2">Sean의 돌잔치 초대장</h1>
       <p className="font-nanum text-sm text-gray-500 mb-8">디자인 컨셉 선택</p>
 
       <div className="flex flex-col gap-4 w-full max-w-xs">

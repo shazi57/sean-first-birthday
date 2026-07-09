@@ -4,9 +4,9 @@ export default function ConceptB() {
   return (
     <div className="flex flex-col max-w-[430px] mx-auto min-h-screen bg-white subpixel-antialiased">
       <Head>
-        <title>Sean's 돐잔치</title>
+        <title>Sean's 돌잔치</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="Sean의 돐잔치에 초대합니다" />
+        <meta property="og:title" content="Sean의 돌잔치에 초대합니다" />
         <meta property="og:description" content="Sean's First Birthday Celebration" />
       </Head>
 

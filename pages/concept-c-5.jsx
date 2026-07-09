@@ -1,5 +1,5 @@
-import { useState, useEffect } from 'react';
 import Head from 'next/head';
+import { useEffect, useState } from 'react';
 
 function SparkleIcon({ className }) {
   return (
@@ -7,6 +7,42 @@ function SparkleIcon({ className }) {
       <path d="M12 2l1.09 3.41L16.5 6.5l-3.41 1.09L12 11l-1.09-3.41L7.5 6.5l3.41-1.09L12 2z"/>
       <path d="M18 12l.75 2.25L21 15l-2.25.75L18 18l-.75-2.25L15 15l2.25-.75L18 12z"/>
       <path d="M6 14l.5 1.5L8 16l-1.5.5L6 18l-.5-1.5L4 16l1.5-.5L6 14z"/>
+    </svg>
+  );
+}
+
+function StarIcon({ className }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <path d="M8.243 7.34l-6.38 .925l-.113 .023a1 1 0 0 0 -.44 1.684l4.622 4.499l-1.09 6.355l-.013 .11a1 1 0 0 0 1.464 .944l5.706 -3l5.693 3l.1 .046a1 1 0 0 0 1.352 -1.1l-1.091 -6.355l4.624 -4.5l.078 -.085a1 1 0 0 0 -.633 -1.62l-6.38 -.926l-2.852 -5.78a1 1 0 0 0 -1.794 0l-2.853 5.78z"/>
+    </svg>
+  );
+}
+
+function HeartIcon({ className }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <path d="M6.979 3.074a6 6 0 0 1 4.988 1.425l.037 .033l.034 -.03a6 6 0 0 1 4.733 -1.44l.246 .036a6 6 0 0 1 3.364 10.008l-5.09 5.09a2.9 2.9 0 0 1 -3.32 .57l-.162 -.09l-.137 -.1l-5.106 -5.105a6 6 0 0 1 .413 -8.397z"/>
+    </svg>
+  );
+}
+
+function BalloonIcon({ className }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}>
+      <path d="M12 1a7 7 0 0 1 7 7c0 5.457 -3.028 10 -7 10c-3.972 0 -7 -4.543 -7 -10a7 7 0 0 1 7 -7z"/>
+      <path d="M12 18a1 1 0 0 1 .993 .883l.007 .117v1a1 1 0 0 1 -1.993 .117l-.007 -.117v-1a1 1 0 0 1 1 -1z"/>
+    </svg>
+  );
+}
+
+function ConfettiIcon({ className }) {
+  return (
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+      <path d="M4 5h2"/><path d="M5 4v2"/><path d="M11.5 4l-.5 2"/>
+      <path d="M18 5h2"/><path d="M19 4v2"/><path d="M15 9l-1 1"/>
+      <path d="M18 13l2 -.5"/><path d="M18 19h2"/><path d="M19 18v2"/>
+      <path d="M14 16.518l-6.518 -6.518l-4.39 9.58a1.003 1.003 0 0 0 1.329 1.329l9.579 -4.39z"/>
     </svg>
   );
 }
@@ -56,9 +92,9 @@ export default function ConceptC5() {
   return (
     <div className="flex flex-col max-w-[430px] mx-auto min-h-screen bg-baby-sky subpixel-antialiased relative">
       <Head>
-        <title>시온이의 돐잔치 🎂</title>
+        <title>시온이의 돌잔치 🎂</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta property="og:title" content="시온이의 돐잔치에 놀러오세요! 🎉" />
+        <meta property="og:title" content="시온이의 돌잔치에 놀러오세요! 🎉" />
         <meta property="og:description" content="우리 시온이가 벌써 첫 생일을 맞이했어요!" />
       </Head>
 
@@ -96,49 +132,75 @@ export default function ConceptC5() {
         </div>
       )}
 
-      {/* Hero Section - Full width, full height, no card */}
-      <section className="bg-white w-full min-h-screen flex flex-col justify-between">
-        {/* Date with decorative branches */}
-        <div className="flex items-center justify-center gap-3 pt-16 pb-2">
-          <LeafBranchLeft className="w-14 h-6 text-baby-blue/40" />
+      {/* Hero Section - Full width, 80vh, no card */}
+      <section className="bg-white w-full h-[80vh] flex flex-col justify-between relative overflow-hidden">
+        {/* Floating decorative elements */}
+        <div className="absolute top-20 left-4 z-10">
+          <BalloonIcon className="w-6 h-6 text-blue-200 opacity-40" />
+        </div>
+        <div className="absolute top-28 right-6 z-10">
+          <StarIcon className="w-5 h-5 text-yellow-200 opacity-40" />
+        </div>
+        <div className="absolute top-[42%] left-5 z-10">
+          <HeartIcon className="w-4 h-4 text-pink-200 opacity-40" />
+        </div>
+        <div className="absolute top-[48%] right-5 z-10">
+          <BalloonIcon className="w-5 h-5 text-pink-200 opacity-35" />
+        </div>
+        <div className="absolute top-[58%] left-10 z-10">
+          <StarIcon className="w-3 h-3 text-yellow-200 opacity-40" />
+        </div>
+        <div className="absolute top-[62%] right-12 z-10">
+          <HeartIcon className="w-3 h-3 text-red-200 opacity-35" />
+        </div>
+        <div className="absolute bottom-[22%] left-5 z-10">
+          <ConfettiIcon className="w-5 h-5 text-blue-200 opacity-35" />
+        </div>
+        <div className="absolute bottom-[26%] right-8 z-10">
+          <StarIcon className="w-4 h-4 text-yellow-200 opacity-35" />
+        </div>
+
+        {/* Date with decorative branches - darker */}
+        <div className="flex items-center justify-center gap-3 pt-12 pb-2 relative z-20">
+          <LeafBranchLeft className="w-14 h-6 text-[#5a7aad]" />
           <div className="text-center">
-            <p className="font-baskerville text-3xl text-baby-blue/70 tracking-wider">08.13</p>
+            <p className="font-baskerville text-3xl text-[#4a6a9d] tracking-wider">08.13</p>
           </div>
-          <LeafBranchRight className="w-14 h-6 text-baby-blue/40" />
+          <LeafBranchRight className="w-14 h-6 text-[#5a7aad]" />
         </div>
 
-        {/* Happy Birthday text with decorative dots */}
-        <div className="text-center pb-4">
-          <p className="font-cute text-xs text-baby-blue/60 tracking-[0.25em]">HAPPY FIRST BIRTHDAY</p>
+        {/* Happy Birthday text - darker */}
+        <div className="text-center pb-3 relative z-20">
+          <p className="font-cute text-xs text-[#4a6a9d] tracking-[0.25em]">HAPPY FIRST BIRTHDAY</p>
           <div className="flex justify-center gap-1.5 mt-3">
-            <span className="w-1 h-1 rounded-full bg-baby-blue/30"></span>
-            <span className="w-1 h-1 rounded-full bg-pink-200/60"></span>
-            <span className="w-1 h-1 rounded-full bg-yellow-200/70"></span>
-            <span className="w-1 h-1 rounded-full bg-baby-blue/30"></span>
-            <span className="w-1 h-1 rounded-full bg-pink-200/60"></span>
+            <span className="w-1 h-1 rounded-full bg-[#5a7aad]/50"></span>
+            <span className="w-1 h-1 rounded-full bg-pink-300/70"></span>
+            <span className="w-1 h-1 rounded-full bg-yellow-300/80"></span>
+            <span className="w-1 h-1 rounded-full bg-[#5a7aad]/50"></span>
+            <span className="w-1 h-1 rounded-full bg-pink-300/70"></span>
           </div>
         </div>
 
-        {/* Photo - full width, no rounding */}
-        <div className="w-full flex-1 min-h-0">
+        {/* Photo - full width, crop top portion */}
+        <div className="w-full flex-1 min-h-0 relative z-0">
           <img
             src="/images/sean-main.png"
             alt="시온"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-bottom"
           />
         </div>
 
         {/* Thin decorative line separator */}
-        <div className="flex justify-center py-4">
-          <div className="w-16 h-[0.5px] bg-baby-blue/30"></div>
+        <div className="flex justify-center py-3 relative z-20">
+          <div className="w-16 h-[0.5px] bg-[#5a7aad]/30"></div>
         </div>
 
         {/* Name area - with sparkles and tagline */}
-        <div className="text-center pb-12">
+        <div className="text-center pb-8 relative z-20">
           <div className="flex items-center justify-center gap-2 mb-1">
-            <SparkleIcon className="w-4 h-4 text-yellow-300/70" />
+            <SparkleIcon className="w-4 h-4 text-yellow-300/80" />
             <h1 className="font-cute text-5xl text-gray-700">Sean</h1>
-            <SparkleIcon className="w-4 h-4 text-yellow-300/70" />
+            <SparkleIcon className="w-4 h-4 text-yellow-300/80" />
           </div>
           <p className="font-nanum text-sm text-gray-500 mt-2">류시온</p>
           <p className="font-nanum text-[0.7rem] text-gray-400 mt-2 tracking-wider">우리의 첫 번째 기적 ✦</p>
@@ -155,7 +217,7 @@ export default function ConceptC5() {
             <p>우리 시온이가 벌써 첫 생일을 맞이했어요.</p>
             <p className="mt-3">매일매일 쑥쑥 자라준 시온이와 함께</p>
             <p>기쁜 날을 보내고 싶어</p>
-            <p>작은 돐잔치를 준비했습니다. 🎉</p>
+            <p>작은 돌잔치를 준비했습니다. 🎉</p>
             <p className="mt-3">오셔서 시온이의 첫 생일을</p>
             <p>함께 축하해 주세요! 🥰</p>
           </div>
@@ -170,7 +232,7 @@ export default function ConceptC5() {
       <section className="px-6 pb-8">
         <div className="bg-white rounded-3xl overflow-hidden shadow-sm">
           <div className="bg-baby-mint/50 px-6 py-4 text-center">
-            <h2 className="font-cute text-lg text-gray-700">돐잔치 안내 🎊</h2>
+            <h2 className="font-cute text-lg text-gray-700">돌잔치 안내 🎊</h2>
           </div>
           <div className="p-6 space-y-4">
             <div className="flex items-start gap-4">
@@ -204,7 +266,7 @@ export default function ConceptC5() {
         <h2 className="font-cute text-lg text-gray-700 text-center mb-4">시온이의 성장앨범 📸</h2>
         <div className="px-6 overflow-x-auto">
           <div className="flex gap-3 pb-4" style={{ width: 'max-content' }}>
-            {['탄생', '100일', '6개월', '9개월', '11개월', '돐'].map((label, i) => (
+            {['탄생', '100일', '6개월', '9개월', '11개월', '돌'].map((label, i) => (
               <div key={i} className="w-40 shrink-0">
                 <div className="w-40 h-48 rounded-2xl bg-white border-2 border-dashed border-baby-blue/50 flex items-center justify-center shadow-sm">
                   <span className="font-nanum text-xs text-gray-400">Photo</span>
@@ -234,7 +296,7 @@ export default function ConceptC5() {
 
       {/* Footer */}
       <footer className="py-8 text-center">
-        <p className="font-cute text-sm text-gray-500">시온이의 돐잔치에 와주셔서 감사합니다 💙</p>
+        <p className="font-cute text-sm text-gray-500">시온이의 돌잔치에 와주셔서 감사합니다 💙</p>
         <p className="font-nanum text-xs text-gray-400 mt-1">Made with love</p>
       </footer>
 
