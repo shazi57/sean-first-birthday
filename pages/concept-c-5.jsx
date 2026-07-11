@@ -261,6 +261,30 @@ export default function ConceptC5() {
         </div>
       </section>
 
+      {/* Guest Parking */}
+      <section className="px-6 pb-8">
+        <div className="bg-white rounded-3xl overflow-hidden shadow-sm">
+          <div className="bg-baby-mint/50 px-6 py-4 text-center">
+            <h2 className="font-cute text-lg text-gray-700">주차 안내 🚗</h2>
+          </div>
+          <div className="p-4">
+            <div className="rounded-2xl overflow-hidden" style={{ height: '280px' }}>
+              <iframe
+                src="https://www.google.com/maps/d/embed?mid=1Itj-uPYWNaLKRHuhUu2-I78l7yDjvOc&ehbc=E8EAED"
+                width="100%"
+                height="340"
+                style={{ border: 0, marginTop: '-56px' }}
+                allowFullScreen=""
+                loading="lazy"
+              ></iframe>
+            </div>
+            <p className="font-nanum text-xs text-gray-400 text-center mt-3">
+              표시된 구역에 주차해 주세요 🙏
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Photo Gallery - Carousel */}
       <section className="pb-8">
         <h2 className="font-cute text-lg text-gray-700 text-center mb-4">시온이의 성장앨범 📸</h2>
